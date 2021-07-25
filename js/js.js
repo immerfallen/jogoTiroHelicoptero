@@ -398,6 +398,7 @@ function start() { // Inicio da fun��o start()
                     }
                 
                 }
+
                 function gameOver() {
                     fimdejogo=true;
                     musica.pause();
@@ -413,9 +414,16 @@ function start() { // Inicio da fun��o start()
                     
                     $("#fundoGame").append("<div id='fim'></div>");
                     
-                    $("#fim").html("<h1> Game Over </h1><p>Sua pontua��o foi: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
-                    }
+                    $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
+                    }                   
+                        
+                    
 
 
 }
-   
+
+function reiniciaJogo() {
+    somGameover.pause();
+    $("#fim").remove();
+    start();   
+}
