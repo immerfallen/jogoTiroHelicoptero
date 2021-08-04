@@ -12,6 +12,8 @@ As colisões são calculadas utilizando a extensão _jQuery Collision_.
 
 ### Screenshot
 
+![screenshot](imgs/resgate.gif)
+
 ![screenshot](imgs/screenshot1.png)
 
 ![screenshot](imgs/screenshot2.png)
